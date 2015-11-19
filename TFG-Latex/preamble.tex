@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% $Id: preamble.tex, v1.0 misb Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Para separar correctamente las palabras de multitud de idiomas%%%
+\usepackage[spanish,es-noshorthands]{babel}
+%Este paquete permite poner acentos directamente. Tipo de codificación
+\usepackage[utf8]{inputenc} 
+
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{multicol}
+%\usepackage{ifthen}
+\usepackage{pdflscape}%\usepackage{lscape}
+\usepackage{tocbibind}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{eurosym} % to create euro symbol
+\usepackage{textcomp} %para poner el +/-
+
+% Incluimos las subsubsections en la tabla de contenidos
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{3}
+
+% Encabezados quitados en hojas en blanco
+\makeatletter
+  \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \vspace*{\fill}
+    \thispagestyle{empty}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
+%\usepackage{lscape}
+%Better support for graphics. Builds upon the graphics package
+\usepackage{graphicx}%[dvips]
+%\usepackage[pdftex]{graphicx}
+\usepackage{latexsym}
+\usepackage{epsfig}
+%Paquete para la cabecera de las páginas (nombre, capítulo)
+\usepackage{fancyhdr}
+\usepackage{color}
+%\usepackage{wrapfig}
+%\usepackage{subfigure} %\usepackage{subfig}
+\usepackage{subcaption}
+%\usepackage{epstopdf}
+%\usepackage{here}
+
+%%% HIPERVÍNCULOS %%%
+%\usepackage[dvipdfm,colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\hypersetup{ % Cambiar colores 
+  colorlinks,
+  citecolor=green,
+  linkcolor=blue,
+  urlcolor= cyan
+}
+
+%%% Macros AMS %%%
+\usepackage{amsmath}
+\usepackage{amsthm}						%%%Macros AMS para teoremas%%%
+\usepackage{amsfonts}					%%%Permite usar fuentes AMS%%%
+\usepackage{amssymb}					%%%Para usar simbolos AMS%%%
+
+%\usepackage{picins}
+\usepackage{boxedminipage}
+\usepackage{shadow}
+\usepackage{titlesec}
+\usepackage{curves}
+\usepackage{rotating}
+\usepackage{calc}
+%\usepackage[below]{placeins}		%%% Situar figuras hasta (incluida) la página donde comienza una nueva sección si en la misma aparece algo de texto de la sección precedente.
+\usepackage[section]{placeins}		%%% Figuras dentro de su sección
+%\input{Diagrama-Bloques}
+
+%\setcounter{tocdepth}{3}
+\spanishdecimal{.}
+
+%--------------------------------------------------------------------------
+% Definiciones de estilo de curvas
+%--------------------------------------------------------------------------
+\definecolor{miazul}{rgb}{0,0,0.9}
+\definecolor{mirojo}{rgb}{0.9,0,0}
+\def\miestiloa{\curvedashes[1.0mm]{0,0}}
+\def\miestilob{\put(0,0){\makebox{}}\color{miazul}\curvedashes[1.0mm]{0}}
+\def\miestiloc{\put(0,0){\makebox{}}\color{mirojo}\curvedashes[1.0mm]{0}}
+\def\miestilod{\curvedashes[1.0mm]{0.5,0.4}}
+%---- Otras posibilidades --------------------------------------------------
+%\def\miestilob{\curvedashes[1.0mm]{0.5,0.4}}
+%\def\miestiloc{\curvedashes[1.0mm]{0.5,3}}
+%---------------------------------------------------------------------------
+% Tamaño de las etiquetas en las figuras generadas con el programa de Matlab
+%---------------------------------------------------------------------------
+\def\tamanoetiquetas{\footnotesize}
+\curvewarnfalse   % Evita warning por tramos rectos en una curva
+%\curvewarntrue 
+%----------------------------------------------------------------------------
+
+\usepackage{anysize} %Soporte para el comando \marginsize
+\marginsize{3.5cm}{2.5cm}{2.5cm}{2.5cm}	%Permite manejar los márgenes de forma sencilla

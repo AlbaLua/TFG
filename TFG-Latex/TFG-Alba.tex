@@ -1,0 +1,185 @@
+%%%Tipo de documento:libro (book),tamaño a4,castellano
+\documentclass[a4paper,11pt,twoside,spanish]{book}
+% Incluye los parámetros de configuración
+
+\input{preamble}
+%\input{highlight.sty}
+%\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{verbatim} % Para comentario multilínea
+\usepackage{listings} % Ignorar símbolos especiales
+\usepackage{color} % Colores
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Plantilla para TFG}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Para evitar que separe las palabras al final de las líneas
+\pretolerance=2000
+\tolerance=3000
+\sloppy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       TEXTO DEL DOCUMENTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Para que aparezca el nombre de tablas y no cuadros.
+\renewcommand\tablename{Tabla}
+\renewcommand\contentsname{Índice General}
+\renewcommand\listfigurename{Índice de Figuras}
+\renewcommand\listtablename{Índice de Tablas}
+% Formato al enumerar sea: 1.1.1.
+\renewcommand\labelenumi{\theenumi.}
+\renewcommand{\theenumii}{\arabic{enumii}}
+\renewcommand{\labelenumii}{{\theenumi}.\theenumii}
+%\renewcommand{\labelenumi}{\arabic{enumi}.}
+%\renewcommand{\labelenumii}{\arabic{enumii}.}
+
+% FORMATO DE PÁGINA ______________________________
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\footskip}{35pt}
+\addtolength{\headwidth}{1.5cm}
+\addtolength{\voffset}{-1cm}
+\addtolength{\textheight}{1.5cm}
+\addtolength{\hoffset}{-1cm}
+\addtolength{\oddsidemargin}{1cm}
+\addtolength{\evensidemargin}{1cm}
+\addtolength{\paperheight}{1cm}
+
+%Numeración romana al inicio del PFC
+\frontmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             PORTADA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\input{./General/portada}
+\cleardoublepage
+%\newpage
+%\thispagestyle{empty} \cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       TRIBUNAL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty}
+%\input{./General/tribunal}
+%\newpage
+%\thispagestyle{empty} \cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       AGRADECIMIENTOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\addtolength{\parskip}{10pt}
+\input{./General/agradecimientos}
+\newpage
+%\thispagestyle{empty} \cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       RESUMEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\thispagestyle{empty} \setlength{\headheight}{-20pt}
+\setlength{\topskip}{8pt} \setlength{\textheight}{720pt}
+\addtolength{\parskip}{7pt}
+\input{./General/resumen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       TABLA DE CONTENIDO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Para que cada linea del table of contents este a 0.5mm una de la otra
+\pagestyle{empty}
+\setlength{\parskip}{0.5mm}
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       LISTA DE FIGURAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\listoffigures{}
+\setlength{\textheight}{685pt}
+\thispagestyle{empty}
+\cleardoublepage \setlength{\headheight}{12pt}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       LISTA DE TABLAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\listoftables{}
+\setlength{\textheight}{685pt}
+\thispagestyle{empty}
+\cleardoublepage \setlength{\headheight}{12pt}
+\thispagestyle{empty}
+
+\cleardoublepage
+\input{./General/Glosario}
+\newpage
+
+\setlength{\textheight}{685pt}
+\thispagestyle{empty}
+\cleardoublepage \setlength{\headheight}{12pt}
+\thispagestyle{empty}
+
+
+
+%comenzar con numeración arábica los capítulos del PFC
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    CAPÍTULOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Estilo de las páginas: cabeceras con nombre del capitulo, nombre de la sección.
+\pagestyle{fancy}
+%\pagestyle{headings} Esto me lo pone en cursiva y alineado a la izquierda --> no me gusta
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries \thepage}
+\fancyhead[LO]{\sffamily\scshape\footnotesize\rightmark}
+\fancyhead[RE]{\sffamily\scshape\footnotesize\leftmark}
+
+%Espacio entre párrafos para todo el PFC   
+%\setlength{\parskip}{5mm plus 3.5mm minus 1mm}
+\addtolength{\parskip}{7pt}
+%\usepackage{anysize} %Soporte para el comando \marginsize
+%\marginsize{3cm}{3cm}{2.5cm}{2.5cm}    %Permite manejar los márgenes de forma sencilla
+
+% CAPÍTULOS ________________________________________
+\input{./Capitulos/Introduccion}
+\input{./Capitulos/Estadodelarte}
+\input{./Capitulos/Descripcion}
+\input{./Capitulos/Ejemplos}
+\input{./Capitulos/Planificacion}
+\input{./Capitulos/Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           APÉNDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%\input{./Apendices/ApendiceA}
+%\input{./Apendices/ApendiceB}
+%\input{./Apendices/ApendiceB}
+%\input{./Apendices/ApendiceC}
+%\backmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       BIBLIOGRAFÍA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Para compilar: bibtex MemoriaPFC
+% Luego darle a componer
+%Para poner la bibliografía. El ieeetr es el estilo y lo de abajo son los
+%ficheros .bib que tienes que cargar. Los debes crear tu o coger algunos ya
+%creados con tus referencias.
+\begin{flushleft}
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+
+\nocite{*} %%% OJO: descomentado incluye todas las referencias, hayan sido citadas o no.
+
+\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       FIN DEL DOCUMENTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

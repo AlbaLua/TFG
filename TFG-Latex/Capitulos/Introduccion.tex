@@ -1,0 +1,71 @@
+\chapter{Introducción}
+
+\section{Motivación del proyecto}
+La comunicación es uno de los pilares fundamentales de la sociedad en la que vivimos, por ello es una de las vías de conocimiento y transmisión de información. Gracias a la evolución de la tecnología, han evolucionado también los medios de comunicación, abriendo paso a las redes sociales como un medio de comunicación abierto y cercano a la gente.
+
+La acogida de las redes sociales ha sido tan grande que no dejan de crearse nuevas ideas para compartir el día a día. Están en continuo crecimiento, y más aún con la expansión del uso de los \textit{smartphones}, que permiten tenerlas al alcance de la mano en cualquier momento y lugar. Se han convertido en un hábito de la sociedad, como medio de comunicación y como medio de expresión.
+
+Centrándonos en las estadísticas, tal y como muestra \textit{GlobalWebIndex} en su reporte anual de 2015 \cite{2}, hay varias plataformas como Instagram o Pinterest que han crecido exponencialmente en este último año, pero ninguna de ellas  llega al nivel de Facebook. Esta web sigue siendo la red social más popular a nivel mundial, se estima que un 80\% de la población tiene una cuenta en esta red.  
+ 
+Estos hechos suponen una gran motivación en la realización de este proyecto, dado que el estudio realizado se basa en los datos proporcionados por Facebook, esperando obtener un gran volumen de datos fiables dada la gran dimensión de esta plataforma.
+
+Se pretende crear una página web con un registro de usuarios, donde cada usuario pueda adquirir un estudio personalizado. Este estudio se dividirá en dos partes. 
+
+La primera parte realizará un análisis de las páginas de Facebook de su sección \textit{Post to Page}. Este apartado recoge las publicaciones de los usuarios que han visitado la página para poner sus comentarios. Es una parte que no todas las páginas de Facebook tienen activas, por lo que se limitará el estudio a aquellas páginas que la contengan. Los datos se obtendrán consultando a la API de Facebook y se podrán obtener gráficas en relación a las contestaciones a dichos comentarios por parte de la página web, al tiempo de respuesta a los comentarios, y a la popularidad de los comentarios midiendo los "Me gusta" de cada uno.
+
+La segunda parte realizará un estudio de los usuarios que más han publicado en la sección comentada anteriormente, mediante un \textit{crawler}\footnote{Un \textit{crawler} es un robot informático que consulta de manera iterativa cierta información web disponible, con objeto de recopilar datos. Esto será definido más en detalle en la sección \ref{sec:2.3}} que visitará a cada uno de estos usuarios para coger su información pública. Una vez obtenidos los datos, se obtendrán las gráficas en relación a la edad de los usuarios, la localización y la ocupación profesional. 
+
+Con esta aplicación web se podrá definir las características de dichas páginas. Información muy útil de cara al diseño de patrones de empresas o asociaciones, que llevándolo al terreno de los propios integrantes de esta aplicación, podrán conocer los aspectos más destacables de las páginas. 
+
+Destacar que para la realización de la aplicación que hace posible este estudio, no sólo se debe realizar una aplicación web, si no que también hay que llevar a cabo la recopilación de los datos y su posterior procesado, para lo cual se tienen que desarrollar tareas de gran diversidad, que suponen un gran reto para la elaboración de este trabajo fin de grado. 
+
+ 
+\section{Objetivos del proyecto} \label{sec:1.2}
+Con la realización de este proyecto se pretende conseguir una aplicación en la que los usuarios puedan llevar un registro de los análisis realizados a las diferentes páginas de Facebook, de forma que el propio usuario puede conocer las características de un conjunto de  páginas de Facebook que deseen y cuál es el patrón de los usuarios que la siguen. 
+
+Se debe realizar una aplicación web que tenga las siguientes funcionalidades:
+\begin{itemize} \itemsep4pt \parskip0pt
+\item Registro de nuevos usuarios y función \textit{login/logout} de los usuarios.
+\item Opción de búsqueda de un conjunto de páginas de Facebook para su procesado.
+\item Procesado general de los datos de la página de Facebook.
+\item Procesado en profundidad del perfil de los usuarios.
+\item Historial de las búsquedas realizadas. 
+\item Presentación de las gráficas de los resultados de cada una de las búsquedas.
+\end{itemize}
+
+Para poder realizar estas funcionalidades es necesario el desarrollo de varias partes totalmente distintas, que conformarían el backend de la aplicación. Se enumeran a continuación:
+\begin{itemize} \itemsep4pt \parskip0pt
+\item Control del registro de usuarios y de cada una de sus búsquedas, almacenandolo en la base de datos.
+\item Consultas al API de Facebook para conseguir los datos de las páginas de Facebook.
+\item Desarrollo de un \textit{crawler} que recorra cada uno de los usuarios para obtener los datos públicos que proporcionan.
+\item Distribución del trabajo en diferentes máquinas virtuales para optimizar el tiempo de procesado de los datos.
+\item Procesado de datos, para calcular las estadísticas y representar las gráficas. 
+\end{itemize}
+
+\section{Entorno socio-económico}
+
+La idea de este trabajo fin de grado es la creación de una aplicación útil para la sociedad. 
+Con esta aplicación se puede beneficiar a las empresas a conocer mejor las características de sus competidores. También se puede utilizar para conocer la reacción de la sociedad ante un suceso importante. 
+
+Por ejemplo, suponiendo el hecho de que hay un corte en las líneas de teléfono móvil durante un día en toda España por un problema técnico. Una de las reacciones de los usuarios sería escribir en las páginas de Facebook para quejarse a sus compañías y esperar una solución acerca de lo sucedido. Con este proyecto se podría ver si realmente la sociedad expresa sus sentimientos en la redes sociales, qué compañía telefónica tiene mayor número de clientes, además con el análisis de los usuarios, se podría conocer el perfil de los usuarios más comunes que se han quejado o han comentado algo al respecto.
+
+Los datos proporcionados por la aplicación, como consecuencia, pueden servir para aplicar tareas de marketing a raíz de los datos obtenidos. Por ejemplo, continuando con el ejemplo de las líneas telefónicas,
+identificar qué usuarios se quejan más de los servicios proporcionados con el fin de lanzar campañas de fidelización para los mismos, mejorando su calidad y el impacto de la empresa en cuestión.
+ 
+En definitiva, esta aplicación hace un análisis de una de las redes sociales más importantes hoy en día. Puede llegar a tener un gran valor para las empresas ya que les permite tener \textit{feedback} de sus clientes. Por tanto, este trabajo fin de grado podría llegar a ser un producto comercial. En un contexto socio-económico permitiría la creación de puestos de trabajo.
+
+\section{Estructura del documento}
+
+Tras el primer capítulo de Introducción, el contenido de la presente memoria se completa con 6 capítulos adicionales, los cuales se describen a continuación de forma resumida para facilitar su lectura.
+
+\begin{itemize} \itemsep4pt \parskip0pt
+\item \textbf{Glosario}
+\item \textbf{Capítulo 1: Introducción} Breve introducción del proyecto en la que se expone la motivación del proyecto, los objetivos que se pretenden lograr, el entorno socio-económico que lo enmarca y la estructura de la memoria.
+\item \textbf{Capítulo 2: Estado del arte} Capítulo dedicado al planteamiento del problema, análisis del estado del arte presentando las tecnologías que se han aplicado para el diseño del sistema.
+\item \textbf{Capítulo 3: Descripción general del sistema} Visión general del sistema llevado a cabo. Se enumeran los requisitos de las capacidades, funcionalidades y restricciones de las tecnologías aplicadas. Además se plantean las diferentes alternativas y la solución elegida para resolver este proyecto. Por último se describe el entorno de desarrollo utilizado para desenvolver el sistema.
+\item \textbf{Capítulo 4: Funcionamiento del sistema} Explicación del funcionamiento del sistema, dividiéndolo en dos grandes bloques: Frontend, que conforma la aplicación web creada, y Backend, que desarrolla toda la parte técnica necesaria para este proyecto.
+\item \textbf{Capítulo 5: Ejemplo de utilización de la aplicación} Presentación de un caso práctico para mostrar el funcionamiento de la aplicación.
+\item \textbf{Capítulo 6: Planificación del trabajo y presupuesto del proyecto} Planificación seguida para la realización del proyecto y el presupuesto económico necesario para el mismo.
+\item \textbf{Capítulo 7: Conclusiones} Conclusiones a las que se han llegado tras la finalización del trabajo y exposición de los posibles trabajos futuros que se podrían implementar para ampliar las funcionalidades de la aplicación.
+\item \textbf{Bibliografía}
+\end{itemize}

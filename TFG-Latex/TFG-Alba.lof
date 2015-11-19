@@ -1,0 +1,50 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema general del proyecto\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema TFG en Eclipse. Parte 1\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Esquema TFG en Eclipse. Parte 2\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Logo Servidor Web Jetty\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Registro del servidor web Jetty\relax }}{19}{figure.caption.15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema funcionamiento frontend\relax }}{22}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Captura de pantalla del formulario de Registro\relax }}{22}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Captura de pantalla del formulario de Inicio de Sesi\IeC {\'o}n\relax }}{23}{figure.caption.18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Captura de pantalla del Paso 1\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Captura de pantalla del Paso 2\relax }}{24}{figure.caption.20}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Captura de pantalla del di\IeC {\'a}logo de ayuda del paso 2\relax }}{25}{figure.caption.21}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Captura de pantalla del Paso 3\relax }}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Captura de pantalla del Paso 4\relax }}{26}{figure.caption.23}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Captura de pantalla de la p\IeC {\'a}gina de espera\relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Ejemplo de funcionamiento de un \textit {Servlet} as\IeC {\'\i }ncrono\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Captura de pantalla de la p\IeC {\'a}gina Historial\relax }}{28}{figure.caption.26}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Captura de pantalla del resultado del an\IeC {\'a}lisis\relax }}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Gr\IeC {\'a}fica porcentaje \IeC {\'\i }ndice de respuesta\relax }}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Gr\IeC {\'a}fica tiempo de respuesta\relax }}{30}{figure.caption.29}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Gr\IeC {\'a}fica porcentaje de satisfacci\IeC {\'o}n\relax }}{30}{figure.caption.30}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Gr\IeC {\'a}fica relaci\IeC {\'o}n de genero\relax }}{31}{figure.caption.31}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Gr\IeC {\'a}fica relaci\IeC {\'o}n de genero\relax }}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Gr\IeC {\'a}fica n\IeC {\'u}mero de amigos\relax }}{31}{figure.caption.33}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Esquema funcionamiento backend\relax }}{32}{figure.caption.34}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Esquema petici\IeC {\'o}n API Facebook\relax }}{33}{figure.caption.35}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Captura de pantalla ejemplo Registro de usuario\relax }}{37}{figure.caption.36}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Captura de pantalla ejemplo Inicio de sesi\IeC {\'o}n\relax }}{38}{figure.caption.37}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Captura de pantalla ejemplo solicitud de an\IeC {\'a}lisis. Paso 1\relax }}{38}{figure.caption.38}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Captura de pantalla ejemplo b\IeC {\'u}squeda en Facebook\relax }}{39}{figure.caption.39}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Captura de pantalla ejemplo comprobaci\IeC {\'o}n secci\IeC {\'o}n \textit {Post to Page}\relax }}{39}{figure.caption.40}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Captura de pantalla ejemplo solicitud de an\IeC {\'a}lisis. Paso 2\relax }}{39}{figure.caption.41}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Captura de pantalla ejemplo solicitud de an\IeC {\'a}lisis. Paso 3\relax }}{40}{figure.caption.42}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Captura de pantalla ejemplo solicitud de an\IeC {\'a}lisis. Paso 4\relax }}{40}{figure.caption.43}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Captura de pantalla ejemplo pantalla de espera\relax }}{41}{figure.caption.44}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Captura de pantalla ejemplo correo recibido\relax }}{41}{figure.caption.45}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Captura de pantalla ejemplo historial de b\IeC {\'u}squedas del usuario\relax }}{41}{figure.caption.46}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Captura de pantalla ejemplo an\IeC {\'a}lisis obtenido. S\IeC {\'o}lo las p\IeC {\'a}ginas\relax }}{42}{figure.caption.47}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Captura de pantalla ejemplo an\IeC {\'a}lisis obtenido. Completo\relax }}{42}{figure.caption.48}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
